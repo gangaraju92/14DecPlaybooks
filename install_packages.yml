@@ -1,0 +1,9 @@
+---
+- name: My Test playbook
+  hosts: all
+  become: true
+  tasks:
+  - name: Install package
+    yum:
+      name: docker
+      state: installed  
